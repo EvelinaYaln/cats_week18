@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    /*text-align: center;*/
+    background-color: #F5F5F5
+}
+
+form {
+    max-width: 1016px;
+    padding: 100px 121px 100px 119px;
+    background: #FFF;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 47px;
+    margin-bottom: 60px;
+}
+
+form .middle-text {
+    max-width: 572px;
+    margin: 30px auto 50px;
+}
+
+label.font-size-big {
+    display: inline-block;
+    text-align: left;
+}
+
+#labelForCheckbox {
+    display: block;
+}
+
+label.font-size-big,
+p.font-size-big,
+form div:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+input.border,
+select {
+    width: 100%;
+    margin-bottom: 25px;
+    height: 60px;
+    padding-left: 35px;
+}
+
+form div,
+form .font-size-big {
+    text-align: left;
+}
+
+form div input {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+input.font-size-small {
+    display: block;
+    width: 280px;
+    height: 60px;
+    margin: 40px auto 0;
+    line-height: 60px;
+    background: yellow;
+    border-radius: 10px;
+    border: 0;
+    font-weight: 500;
+    transition: all .5s;
+}
+
+input.border:focus {
+    outline-color: yellow;
+}
+
+input.font-size-small:hover {
+    color: #000;
+    background: rgba(242, 245, 68, 0.5);
+}
+
+.font-size-big {
+    font-size: 1.1rem;
+    line-height: 26px;
+}
+
+.font-size-small,
+.border {
+    font-size: 1rem;
+    line-height: 23px;
+}
+
+#male,
+#female {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .font-size-big {
+        font-size: 1rem;
+    }
+    .border,
+    .font-size-small {
+        font-size: .9rem;
+    }
+    input.font-size-small {
+        width: 324px;
+        height: 48px;
+        line-height: 48px;
+    }
+    form .middle-text {
+        margin: 30px auto;
+    }
+    input.border {
+        height: 53px;
+    }
+    form {
+        padding: 80px 68px 80px 67px;
+    }
+}
+
+input[type="checkbox"] {
+    height: 17px;
+    width: 17px;
+    margin-right: 10px;
+}

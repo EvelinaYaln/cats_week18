@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник для владельцев котиков</title>
+    <link href="styles/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <form>
+        <h2>Опросник для владельцев котиков</h2>
+
+        <label class="font-size-big" for="catsName">Кличка питомца</label> *
+        <input class="border" type="text" name="catsName" id="catsName" placeholder="Кличка вашего питомца" required>
+        <label class="font-size-big" for="ownersName">Имя владельца</label> *
+        <input class="border" type="text" name="ownersName" id="ownersName" placeholder="Имя владельца" required>
+        <label class="font-size-big" for="contacts">Контакты владельца</label> *
+        <input class="border" type="text" name="contacts" id="contacts" placeholder="Контакты владельца" required>
+        <label class="font-size-big" for="contacts">Порода питомца:</label>
+        <select class="border" id="breed">
+            <option disabled>Выберите породу питомца</option>
+            <option class="breed" id="siam">Сиамская</option>
+            <option class="breed" id="britain">Британская</option>
+            <option class="breed" id="persian">Персидская</option>
+            <option class="breed" id="bengal" >Бенгальская</option>
+            <option class="breed" id="sphinx">Сфинкс</option>
+        </select>
+        <p class="font-size-big">Чем питается питомец:</p>
+        <label class="font-size-big" for="dryFeed" id="labelForCheckbox"> 
+        <input type="checkbox" id="dryFeed">Сухой корм</label>
+        <label class="font-size-big" for="wetFeed" id="labelForCheckbox"> 
+        <input type="checkbox" id="wetFeed">Влажный корм</label>
+        <label class="font-size-big" for="mixFeed" id="labelForCheckbox"> 
+        <input type="checkbox" id="mixFeed">Смешанный корм</label>
+        <label class="font-size-big"> Пол питомца:</label>
+        <label class="font-size-big" for="male"><input  type="radio" id="male" name="gender" checked>Самец</label>
+        <label class="font-size-big" for="female"><input  type="radio" id="female" name="gender">Самка</label>
+        <p class="font-size-big">Комментарий:</p>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        <input class="font-size-small" id="save" type="button" value="Сохранить">
+
+    </form>
+
+    <script src="js/index.js">
+    </script>
+</body>
+
+</html>
