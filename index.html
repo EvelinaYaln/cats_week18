@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <form>
+    <form id="cat">
         <h2>Опросник для владельцев котиков</h2>
 
         <label class="font-size-big" for="catsName">Кличка питомца</label> *
@@ -23,19 +23,19 @@
         <label class="font-size-big" for="contacts">Порода питомца:</label>
         <select class="border" id="breed">
             <option disabled>Выберите породу питомца</option>
-            <option class="breed" id="siam">Сиамская</option>
-            <option class="breed" id="britain">Британская</option>
-            <option class="breed" id="persian">Персидская</option>
-            <option class="breed" id="bengal" >Бенгальская</option>
-            <option class="breed" id="sphinx">Сфинкс</option>
+            <option class="breed" id="siam" name="siam" >Сиамская</option>
+            <option class="breed" id="britain" name="britain">Британская</option>
+            <option class="breed" id="persian" name="persian">Персидская</option>
+            <option class="breed" id="bengal" name="bengal">Бенгальская</option>
+            <option class="breed" id="sphinx" name="sphinx">Сфинкс</option>
         </select>
         <p class="font-size-big">Чем питается питомец:</p>
         <label class="font-size-big" for="dryFeed" id="labelForCheckbox"> 
-        <input type="checkbox" id="dryFeed" value="Сухой корм">Сухой корм</label>
+        <input type="checkbox" id="dryFeed" value="Сухой корм" name="dryFeed">Сухой корм</label>
         <label class="font-size-big" for="wetFeed" id="labelForCheckbox"> 
-        <input type="checkbox" id="wetFeed" value="Влажный корм">Влажный корм</label>
+        <input type="checkbox" id="wetFeed" value="Влажный корм" name="wetFeed">Влажный корм</label>
         <label class="font-size-big" for="mixFeed" id="labelForCheckbox"> 
-        <input type="checkbox" id="mixFeed" value="Смешанный корм">Смешанный корм</label>
+        <input type="checkbox" id="mixFeed" value="Смешанный корм" name="mixFeed">Смешанный корм</label>
         <label class="font-size-big"> Пол питомца:</label>
         <label class="font-size-big" for="male"><input  type="radio" id="male" name="gender" value = "Самец" checked >Самец</label>
         <label class="font-size-big" for="female"><input  type="radio" id="female" name="gender" value = "Самка">Самка</label>

@@ -43,3 +43,17 @@ const createObj = () => {
 }
 
 save.addEventListener('click', createObj);
+save.addEventListener('click', function(event) {
+    let catForm = document.getElementById('cat');
+    event.preventDefault();
+    fetch('https://httpbin.org/post', {
+            method: 'POST',
+            body: new FormData(catForm),
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+            },
+        })
+        .then(response => response.json())
+        .then(catChoise => console.log(catChoise))
+        .catch(error => console.log(error))
+});
